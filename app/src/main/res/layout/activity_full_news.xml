@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FullNewsActivity"
+    tools:showIn="@layout/activity_full_news"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/nameDetailTextView"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="News Heading" />
+                <ImageView
+                    android:id="@+id/teacherDetailImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="5dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/descriptionDetailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:padding="5dp"
+                        android:textColor="#0f0f0f"
+                        android:minLines="4"
+                        android:text="NEWS FULL HERE..........." />
+            </LinearLayout>
+        </ScrollView>
+</RelativeLayout>

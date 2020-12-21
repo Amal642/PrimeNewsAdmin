@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "12037533010",
+    "firebase_url": "https://primenews-cb88f.firebaseio.com",
+    "project_id": "primenews-cb88f",
+    "storage_bucket": "primenews-cb88f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12037533010:android:9f19a48acea800f0fa9e8b",
+        "android_client_info": {
+          "package_name": "com.revolt.primenews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12037533010-3j9vg4bj6jlmbm111gcqsq1fb17uflba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq5-y3xem67jzxF6MDHkOqyKjRTJ4liKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12037533010-3j9vg4bj6jlmbm111gcqsq1fb17uflba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12037533010:android:45fee05715e3d97cfa9e8b",
+        "android_client_info": {
+          "package_name": "com.revolt.primenewsadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12037533010-3j9vg4bj6jlmbm111gcqsq1fb17uflba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq5-y3xem67jzxF6MDHkOqyKjRTJ4liKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12037533010-3j9vg4bj6jlmbm111gcqsq1fb17uflba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

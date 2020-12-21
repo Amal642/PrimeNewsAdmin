@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEmergencyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Ambulance " />
+            <EditText
+                android:id="@+id/ambname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ambulance name"
+                />
+            <EditText
+                android:id="@+id/ambplace"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ambulance place"
+                />
+            <EditText
+                android:id="@+id/ambphn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ambulance phone"
+                />
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upload"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Fire " />
+            <EditText
+                android:id="@+id/firename"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Fire name"
+                />
+            <EditText
+                android:id="@+id/fireplace"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ambulance place"
+                />
+            <EditText
+                android:id="@+id/firephn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ambulance phone"
+                />
+            <Button
+                android:id="@+id/fireupload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upload"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add police " />
+            <EditText
+                android:id="@+id/polname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ambulance name"
+                />
+            <EditText
+                android:id="@+id/polplace"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ambulance place"
+                />
+            <EditText
+                android:id="@+id/polphn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="ambulance phone"
+                />
+            <Button
+                android:id="@+id/polupload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upload"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

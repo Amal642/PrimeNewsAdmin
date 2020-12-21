@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="10dp"
+    android:layout_height="200dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/teacherImageView"
+            android:padding="5dp"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="210dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="News Heading"
+                android:id="@+id/nameTextView"
+                android:padding="5dp"
+                android:textColor="@color/colorAccent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Date"
+                android:id="@+id/dateTextView"
+                android:padding="5dp"
+                android:textStyle="italic"/>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/shownews"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:singleLine="true"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/newsshare1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_share_24"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
