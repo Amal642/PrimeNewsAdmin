@@ -333,6 +333,26 @@
                 android:layout_height="wrap_content"
                 android:text="ADd hospital Details"
                 android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/addgeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add General"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View/delete General"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewfullGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADd Genreal Details"
+                android:layout_margin="10dp"/>
+
+
 
 
 

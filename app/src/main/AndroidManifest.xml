@@ -14,7 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewHospitalsActivity"></activity>
+        <activity android:name=".ViewGeneralActivity"></activity>
+        <activity android:name=".GeneralFullDetailsActivity" />
+        <activity android:name=".AddGeneralFullActivity" />
+        <activity android:name=".AddGeneralActivity" />
+        <activity android:name=".ViewHospitalsActivity" />
         <activity android:name=".HospitalFullDetailsActivity" />
         <activity android:name=".AddHospitalFullActivity" />
         <activity android:name=".AddHospitalActivity" />

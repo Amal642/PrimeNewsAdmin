@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
             ,addblood,viewblood,addmedia,viewmedia,addemer,viewemer,addtheatre,viewtheatre,addrest,viewrest
             ,addtour,viewtour,addoff,viewoff,addabout,viewabout,addlinks,viewlinks,addfeedback,viewfeedback,viewmarket,viewtaxi,addtaxi,addtaxifull,
     addworker,viewworker,addfullworker,addsevanam,viewsevanam,addfullsevanam,addshops,viewshops,addfullshops,
-    addhospital,viewhospital,addfullhospital;
+    addhospital,viewhospital,addfullhospital,addgeneral,viewgeneral,addfullgeneral;
     private long backPressedTime = 0;
     private static final String ONESIGNAL_APP_ID = "0136dd72-b8cd-44f6-9932-924dc5a1e627";
 
@@ -77,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
         addhospital=findViewById(R.id.addhospital);
         viewhospital=findViewById(R.id.viewhospital);
         addfullhospital=findViewById(R.id.viewfullhospital);
+        addgeneral=findViewById(R.id.addgeneral);
+        viewgeneral=findViewById(R.id.viewGeneral);
+        addfullgeneral=findViewById(R.id.viewfullGeneral);
 
         addNews.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -427,6 +430,28 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i6);
             }
         });
+        addgeneral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddGeneralActivity.class);
+                startActivity(i6);
+            }
+        });
+        viewgeneral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,ViewGeneralActivity.class);
+                startActivity(i6);
+            }
+        });
+        addfullgeneral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddGeneralFullActivity.class);
+                startActivity(i6);
+            }
+        });
+
 
 
 
