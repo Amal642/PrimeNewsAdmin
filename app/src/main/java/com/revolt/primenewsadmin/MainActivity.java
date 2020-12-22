@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
 
     Button viewAd,addAd,viewBus,addBus,viewNews,addNews,viewAnn,addAnn,addbusdetails,addauto,viewauto,viewfullauto
             ,addblood,viewblood,addmedia,viewmedia,addemer,viewemer,addtheatre,viewtheatre,addrest,viewrest
-            ,addtour,viewtour,addoff,viewoff,addabout,viewabout,addlinks,viewlinks,addfeedback,viewfeedback,viewmarket,viewtaxi,addtaxi,addtaxifull;
+            ,addtour,viewtour,addoff,viewoff,addabout,viewabout,addlinks,viewlinks,addfeedback,viewfeedback,viewmarket,viewtaxi,addtaxi,addtaxifull,
+    addworker,viewworker,addfullworker,addsevanam,viewsevanam,addfullsevanam,addshops,viewshops,addfullshops,
+    addhospital,viewhospital,addfullhospital;
     private long backPressedTime = 0;
     private static final String ONESIGNAL_APP_ID = "0136dd72-b8cd-44f6-9932-924dc5a1e627";
 
@@ -63,6 +65,18 @@ public class MainActivity extends AppCompatActivity {
         viewtaxi=findViewById(R.id.viewtaxi);
         addtaxi=findViewById(R.id.addtaxi);
         addtaxifull=findViewById(R.id.viewfulltaxi);
+        addworker=findViewById(R.id.addthorilali);
+        viewworker=findViewById(R.id.viewworker);
+        addfullworker=findViewById(R.id.viewfullworker);
+        addsevanam=findViewById(R.id.addsevanam);
+        viewsevanam=findViewById(R.id.viewsevanam);
+        addfullsevanam=findViewById(R.id.viewfullsevanam);
+        addshops=findViewById(R.id.addshops);
+        viewshops=findViewById(R.id.viewshops);
+        addfullshops=findViewById(R.id.viewfullshops);
+        addhospital=findViewById(R.id.addhospital);
+        viewhospital=findViewById(R.id.viewhospital);
+        addfullhospital=findViewById(R.id.viewfullhospital);
 
         addNews.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -329,6 +343,92 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i6);
             }
         });
+        addworker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddThorilaliActvity.class);
+                startActivity(i6);
+            }
+        });
+        viewworker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,ViewThorilaliActivity.class);
+                startActivity(i6);
+            }
+        });
+        addfullworker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddThorilalifullActivity.class);
+                startActivity(i6);
+            }
+        });
+        addsevanam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddSevanamActivtiy.class);
+                startActivity(i6);
+            }
+        });
+        viewsevanam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,ViewSevanamActivity.class);
+                startActivity(i6);
+            }
+        });
+        addfullsevanam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddSevanamFullActivity.class);
+                startActivity(i6);
+            }
+        });
+        addshops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddShopsActivity.class);
+                startActivity(i6);
+            }
+        });
+        viewshops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,ViewShopsActivity.class);
+                startActivity(i6);
+            }
+        });
+        addfullshops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddShopsFullActivity.class);
+                startActivity(i6);
+            }
+        });
+        addhospital.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddHospitalActivity.class);
+                startActivity(i6);
+            }
+        });
+        viewhospital.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,ViewHospitalsActivity.class);
+                startActivity(i6);
+            }
+        });
+        addfullhospital.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i6 = new Intent(MainActivity.this,AddHospitalFullActivity.class);
+                startActivity(i6);
+            }
+        });
+
+
 
 
     }

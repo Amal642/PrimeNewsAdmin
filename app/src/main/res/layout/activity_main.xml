@@ -261,6 +261,81 @@
                 android:text="ADd taxi Details"
                 android:layout_margin="10dp"/>
 
+            <Button
+                android:id="@+id/addthorilali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Worker"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewworker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View/delete Worker"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewfullworker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADd Worker Details"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/addsevanam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Sevanam"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewsevanam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View/delete Sevanam"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewfullsevanam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADd Sevanam Details"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/addshops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Shops"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewshops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View/delete Shops"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewfullshops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADd shop Details"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/addhospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add hospital"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewhospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View/delete hospital"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/viewfullhospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADd hospital Details"
+                android:layout_margin="10dp"/>
+
+
+
 
         </LinearLayout>
 
