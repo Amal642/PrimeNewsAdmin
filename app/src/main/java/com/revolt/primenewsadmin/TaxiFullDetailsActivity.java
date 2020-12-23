@@ -40,7 +40,7 @@ public class TaxiFullDetailsActivity extends AppCompatActivity {
         mTeachers = new ArrayList<>();
         Intent i=this.getIntent();
         String name=i.getExtras().getString("NAME_KEY");
-        mAdapter = new TaxifullAdapter(TaxiFullDetailsActivity.this, mTeachers);
+        mAdapter = new TaxifullAdapter(TaxiFullDetailsActivity.this, mTeachers,name);
         mRecyclerView.setAdapter(mAdapter);
         mStorage = FirebaseStorage.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Taxi_Stationss").child(name);

@@ -115,7 +115,7 @@ public class AddOfficeActivity extends AppCompatActivity {
                             fileReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
-                                    Toast.makeText(AddOfficeActivity.this, "News Upload successful", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(AddOfficeActivity.this, "Office Upload successful", Toast.LENGTH_LONG).show();
                                     Office upload = new Office(nameEditText.getText().toString().trim(),
                                             uri.toString(),
                                             descriptionEditText.getText().toString());

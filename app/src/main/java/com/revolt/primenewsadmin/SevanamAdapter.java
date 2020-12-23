@@ -3,44 +3,37 @@ package com.revolt.primenewsadmin;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.view.ContextMenu;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.FirebaseDatabase;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class TaxiAdapter extends RecyclerView.Adapter<TaxiAdapter.RecyclerViewHolder>{
+public class SevanamAdapter extends RecyclerView.Adapter<SevanamAdapter.RecyclerViewHolder>{
 
     private Context mContext;
     private List<Taxi> teachers;
-    private OnItemClickListener mListener;
+    private SevanamAdapter.OnItemClickListener mListener;
 
-    public TaxiAdapter(Context context, List<Taxi> uploads) {
+    public SevanamAdapter(Context context, List<Taxi> uploads) {
         mContext = context;
         teachers = uploads;
     }
 
 
     @Override
-    public TaxiAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public SevanamAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(mContext).inflate(R.layout.row_modellink, parent, false);
-        return new TaxiAdapter.RecyclerViewHolder(v);
+        return new SevanamAdapter.RecyclerViewHolder(v);
     }
     @Override
-    public void onBindViewHolder(final TaxiAdapter.RecyclerViewHolder holder, int position) {
+    public void onBindViewHolder(final SevanamAdapter.RecyclerViewHolder holder, int position) {
         final Taxi currentTeacher = teachers.get(position);
         holder.nameTextView.setText(currentTeacher.getName());
         holder.delete.setOnClickListener(new View.OnClickListener() {
@@ -52,9 +45,9 @@ public class TaxiAdapter extends RecyclerView.Adapter<TaxiAdapter.RecyclerViewHo
                 builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("Taxi_Stations")
+                        FirebaseDatabase.getInstance().getReference().child("Sevanam")
                                 .child(currentTeacher.getKey()).removeValue();
-                        FirebaseDatabase.getInstance().getReference().child("Taxi_Stationss")
+                        FirebaseDatabase.getInstance().getReference().child("Sevanams")
                                 .child(currentTeacher.getKey()).removeValue();
 
                     }
@@ -119,7 +112,7 @@ public class TaxiAdapter extends RecyclerView.Adapter<TaxiAdapter.RecyclerViewHo
     public interface OnItemClickListener {
         void onItemClick(int position);
     }
-    public void setOnItemClickListener(TaxiAdapter.OnItemClickListener listener) {
+    public void setOnItemClickListener(SevanamAdapter.OnItemClickListener listener) {
         mListener = listener;
     }
 }

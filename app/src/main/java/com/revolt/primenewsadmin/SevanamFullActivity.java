@@ -21,7 +21,7 @@ import java.util.List;
 public class SevanamFullActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
-    private TaxifullAdapter mAdapter;
+    private SevanamFullAdapter mAdapter;
     private FirebaseStorage mStorage;
     private DatabaseReference mDatabaseRef;
     private ValueEventListener mDBListener;
@@ -40,7 +40,7 @@ public class SevanamFullActivity extends AppCompatActivity {
         mTeachers = new ArrayList<>();
         Intent i=this.getIntent();
         String name=i.getExtras().getString("NAME_KEY");
-        mAdapter = new TaxifullAdapter(SevanamFullActivity.this, mTeachers);
+        mAdapter = new SevanamFullAdapter(SevanamFullActivity.this, mTeachers,name);
         mRecyclerView.setAdapter(mAdapter);
         mStorage = FirebaseStorage.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Sevanams").child(name);

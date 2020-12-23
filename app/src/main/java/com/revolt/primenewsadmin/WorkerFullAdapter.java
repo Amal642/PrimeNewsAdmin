@@ -16,12 +16,12 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 
-public class TaxifullAdapter extends RecyclerView.Adapter<TaxifullAdapter.RecyclerViewHolder>{
+public class WorkerFullAdapter  extends RecyclerView.Adapter<WorkerFullAdapter.RecyclerViewHolder>{
 
     private Context mContext;
     private List<Taxifull> teachers;
     String entity;
-    public TaxifullAdapter(Context context, List<Taxifull> uploads,String name) {
+    public WorkerFullAdapter(Context context, List<Taxifull> uploads,String name) {
         mContext = context;
         teachers = uploads;
         entity=name;
@@ -29,12 +29,12 @@ public class TaxifullAdapter extends RecyclerView.Adapter<TaxifullAdapter.Recycl
 
 
     @Override
-    public TaxifullAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public WorkerFullAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(mContext).inflate(R.layout.row_model4, parent, false);
-        return new TaxifullAdapter.RecyclerViewHolder(v);
+        return new WorkerFullAdapter.RecyclerViewHolder(v);
     }
     @Override
-    public void onBindViewHolder(final TaxifullAdapter.RecyclerViewHolder holder, int position) {
+    public void onBindViewHolder(final WorkerFullAdapter.RecyclerViewHolder holder, int position) {
         final Taxifull currentTeacher = teachers.get(position);
         holder.nameTextView.setText(currentTeacher.getBusname());
         holder.place.setText(currentTeacher.getBservice());
@@ -48,7 +48,7 @@ public class TaxifullAdapter extends RecyclerView.Adapter<TaxifullAdapter.Recycl
                 builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("Taxi_Stationss").child(entity)
+                        FirebaseDatabase.getInstance().getReference().child("Torilaliss").child(entity)
                                 .child(currentTeacher.getId()).removeValue();
                         Toast.makeText(mContext, "deleted", Toast.LENGTH_SHORT).show();
 

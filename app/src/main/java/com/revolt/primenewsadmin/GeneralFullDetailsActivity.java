@@ -40,7 +40,7 @@ public class GeneralFullDetailsActivity extends AppCompatActivity {
         mTeachers = new ArrayList<>();
         Intent i=this.getIntent();
         String name=i.getExtras().getString("NAME_KEY");
-        mAdapter = new TaxifullAdapter(GeneralFullDetailsActivity.this, mTeachers);
+        //mAdapter = new TaxifullAdapter(GeneralFullDetailsActivity.this, mTeachers);
         mRecyclerView.setAdapter(mAdapter);
         mStorage = FirebaseStorage.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Generals").child(name);

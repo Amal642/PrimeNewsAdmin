@@ -40,7 +40,7 @@ public class HospitalFullDetailsActivity extends AppCompatActivity {
         mTeachers = new ArrayList<>();
         Intent i=this.getIntent();
         String name=i.getExtras().getString("NAME_KEY");
-        mAdapter = new TaxifullAdapter(HospitalFullDetailsActivity.this, mTeachers);
+        //mAdapter = new TaxifullAdapter(HospitalFullDetailsActivity.this, mTeachers);
         mRecyclerView.setAdapter(mAdapter);
         mStorage = FirebaseStorage.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Hospitals").child(name);
