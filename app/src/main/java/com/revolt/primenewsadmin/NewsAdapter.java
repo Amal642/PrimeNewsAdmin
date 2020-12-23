@@ -1,6 +1,8 @@
 package com.revolt.primenewsadmin;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -13,8 +15,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.text.DateFormat;
@@ -40,11 +44,34 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.RecyclerViewHo
         return new RecyclerViewHolder(v);
     }
     @Override
-    public void onBindViewHolder(RecyclerViewHolder holder, int position) {
-        News currentTeacher = teachers.get(position);
+    public void onBindViewHolder(final RecyclerViewHolder holder, final int position) {
+        final News currentTeacher = teachers.get(position);
         holder.nameTextView.setText(currentTeacher.getName());
         //holder.descriptionTextView.setText(currentTeacher.getDescription());
         holder.dateTextView.setText(currentTeacher.getDate());
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder=new AlertDialog.Builder(holder.nameTextView.getContext());
+                builder.setTitle("Delete");
+                builder.setMessage("Sure to proceed?");
+                builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseDatabase.getInstance().getReference().child("teachers_uploads")
+                                .child(currentTeacher.getKey()).removeValue();
+
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+                builder.show();
+            }
+        });
         Picasso.get()
                 .load(currentTeacher.getImageUrl())
                 .fit()
@@ -59,7 +86,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.RecyclerViewHo
             View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener {
         public TextView nameTextView,descriptionTextView,dateTextView;
         public ImageView teacherImageView;
-        public ImageButton imageButton,viewnews;
+        public ImageButton imageButton,viewnews,delete;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
@@ -69,6 +96,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.RecyclerViewHo
             teacherImageView = itemView.findViewById(R.id.teacherImageView);
             imageButton=itemView.findViewById(R.id.newsshare1);
             viewnews=itemView.findViewById(R.id.shownews);
+            delete=itemView.findViewById(R.id.delete);
             imageButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

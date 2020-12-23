@@ -17,6 +17,13 @@
             android:id="@+id/teacherImageView"
             android:padding="5dp"
             />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_delete_24"
+            />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="210dp"
@@ -37,6 +44,7 @@
                 android:id="@+id/dateTextView"
                 android:padding="5dp"
                 android:textStyle="italic"/>
+
 
 
         </LinearLayout>

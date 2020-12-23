@@ -21,9 +21,11 @@ import java.util.List;
 public class ViewbusStationsActivity extends AppCompatActivity implements BusStatAdapter.OnItemClickListener{
     private RecyclerView mRecyclerView;
     private BusStatAdapter mAdapter;
+    private BAdapter newadapter;
     private DatabaseReference mDatabaseRef;
     private ValueEventListener mDBListener;
     private List<Busstations> mTeachers;
+    String[] entity1;
     private void openDetailActivity(String[] data) {
         Intent intent = new Intent(this,BusFullDetailsActivity.class);
         intent.putExtra("NAME_KEY", data[0]);
@@ -44,6 +46,7 @@ public class ViewbusStationsActivity extends AppCompatActivity implements BusSta
         // mProgressBar.setVisibility(View.VISIBLE);
         mTeachers = new ArrayList<>();
         mAdapter = new BusStatAdapter(ViewbusStationsActivity.this, mTeachers);
+        newadapter = new BAdapter(ViewbusStationsActivity.this,entity1);
         mRecyclerView.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener( ViewbusStationsActivity.this);
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Bus_Stations");
@@ -72,6 +75,7 @@ public class ViewbusStationsActivity extends AppCompatActivity implements BusSta
         Busstations clickedTeacher=mTeachers.get(position);
         String[] teacherData={clickedTeacher.getName()};
         openDetailActivity(teacherData);
+        entity1=teacherData;
 
 
     }

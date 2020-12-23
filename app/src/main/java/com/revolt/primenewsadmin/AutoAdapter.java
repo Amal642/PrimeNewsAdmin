@@ -26,7 +26,7 @@ public class AutoAdapter extends  RecyclerView.Adapter<AutoAdapter.RecyclerViewH
 
     @Override
     public AutoAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.row_model3, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.row_model4, parent, false);
         return new AutoAdapter.RecyclerViewHolder(v);
     }
     @Override
@@ -46,9 +46,9 @@ public class AutoAdapter extends  RecyclerView.Adapter<AutoAdapter.RecyclerViewH
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
-            nameTextView =itemView.findViewById ( R.id.busname);
-            placee=itemView.findViewById(R.id.busservice);
-            time=itemView.findViewById(R.id.bustime);
+            nameTextView =itemView.findViewById ( R.id.titleann);
+            placee=itemView.findViewById(R.id.descann);
+            time=itemView.findViewById(R.id.phoneann);
 
 
         }

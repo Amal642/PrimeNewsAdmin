@@ -31,7 +31,7 @@ public class AutoStatAdapter extends RecyclerView.Adapter<AutoStatAdapter.Recycl
 
     @Override
     public AutoStatAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.row_model2, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.row_modellink, parent, false);
         return new AutoStatAdapter.RecyclerViewHolder(v);
     }
     @Override

@@ -1,7 +1,7 @@
 package com.revolt.primenewsadmin;
 
 public class Taxifull {
-    String busname,bservice,btime,bclass,broute;
+    String busname,bservice,btime;
     String id;
 
     public Taxifull() {
@@ -20,13 +20,6 @@ public class Taxifull {
         return btime;
     }
 
-    public String getBclass() {
-        return bclass;
-    }
-
-    public String getBroute() {
-        return broute;
-    }
 
     public String getId() {
         return id;
@@ -36,12 +29,10 @@ public class Taxifull {
         this.id = id;
     }
 
-    public Taxifull(String busname, String bservice, String btime, String bclass, String broute, String id) {
+    public Taxifull(String busname, String bservice, String btime, String id) {
         this.busname = busname;
         this.bservice = bservice;
         this.btime = btime;
-        this.bclass = bclass;
-        this.broute = broute;
         this.id = id;
     }
 }
