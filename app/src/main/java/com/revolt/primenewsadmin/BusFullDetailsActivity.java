@@ -44,7 +44,7 @@ public class BusFullDetailsActivity extends AppCompatActivity {
         mTeachers = new ArrayList<>();
         Intent i=this.getIntent();
         String name=i.getExtras().getString("NAME_KEY");
-        mAdapter = new BAdapter(BusFullDetailsActivity.this, mTeachers);
+        mAdapter = new BAdapter(BusFullDetailsActivity.this, mTeachers,name);
         mRecyclerView.setAdapter(mAdapter);
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Bus_Stationss").child(name);
         mDBListener = mDatabaseRef.addValueEventListener(new ValueEventListener() {

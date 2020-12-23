@@ -32,17 +32,13 @@ public class BAdapter extends RecyclerView.Adapter<BAdapter.RecyclerViewHolder>{
 
     private Context mContext;
     private List<BusStatDetails> teachers;
-    String [] entity;
-    public BAdapter(Context context, List<BusStatDetails> uploads) {
+    String entity;
+    public BAdapter(Context context, List<BusStatDetails> uploads,String name) {
         mContext = context;
         teachers = uploads;
+        entity=name;
     }
 
-    public BAdapter(ViewbusStationsActivity viewbusStationsActivity, String[] entity1) {
-        entity=entity1;
-
-
-    }
 
 
     @Override
@@ -67,8 +63,9 @@ public class BAdapter extends RecyclerView.Adapter<BAdapter.RecyclerViewHolder>{
                 builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("Bus_Stationss").child(String.valueOf(entity))
+                        FirebaseDatabase.getInstance().getReference().child("Bus_Stationss").child(entity)
                                 .child(currentTeacher.getId()).removeValue();
+                        Toast.makeText(mContext, "hi", Toast.LENGTH_SHORT).show();
 
                     }
                 });
