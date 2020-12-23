@@ -43,7 +43,7 @@ public class AutoFullDetailsActivity extends AppCompatActivity {
         mTeachers = new ArrayList<>();
         Intent i = this.getIntent();
         String name = i.getExtras().getString("NAME_KEY");
-        mAdapter = new AutoAdapter(AutoFullDetailsActivity.this, mTeachers);
+        mAdapter = new AutoAdapter(AutoFullDetailsActivity.this, mTeachers,name);
         mRecyclerView.setAdapter(mAdapter);
         mStorage = FirebaseStorage.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Auto_Stationss").child(name);

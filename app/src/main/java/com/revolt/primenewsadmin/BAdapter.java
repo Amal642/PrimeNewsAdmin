@@ -65,7 +65,7 @@ public class BAdapter extends RecyclerView.Adapter<BAdapter.RecyclerViewHolder>{
                     public void onClick(DialogInterface dialogInterface, int i) {
                         FirebaseDatabase.getInstance().getReference().child("Bus_Stationss").child(entity)
                                 .child(currentTeacher.getId()).removeValue();
-                        Toast.makeText(mContext, "hi", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, "deleted", Toast.LENGTH_SHORT).show();
 
                     }
                 });

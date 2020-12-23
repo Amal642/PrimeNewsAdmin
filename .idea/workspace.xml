@@ -35,9 +35,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e171811b-22ef-457b-a2e0-de5bdfeb702c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AutoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AutoAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AutoFullDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AutoFullDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AutoStatAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AutoStatAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/BAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/BAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/BusFullDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/BusFullDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewbusStationsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewbusStationsActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608714666375</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="new">
+      <created>1608716138751</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1608716138751</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -509,10 +519,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1607434391935" />
-    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1608714657600">
+    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1608716136711">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608714657600" />
+    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608716136711" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608708671322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -545,10 +555,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608574199990" />
-    <state x="275" y="85" key="Vcs.Push.Dialog.v2" timestamp="1608714670358">
+    <state x="275" y="85" key="Vcs.Push.Dialog.v2" timestamp="1608716141270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="85" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608714670358" />
+    <state x="275" y="85" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608716141270" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1607593365833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

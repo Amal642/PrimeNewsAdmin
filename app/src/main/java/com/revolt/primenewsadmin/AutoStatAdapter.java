@@ -35,9 +35,34 @@ public class AutoStatAdapter extends RecyclerView.Adapter<AutoStatAdapter.Recycl
         return new AutoStatAdapter.RecyclerViewHolder(v);
     }
     @Override
-    public void onBindViewHolder(AutoStatAdapter.RecyclerViewHolder holder, int position) {
-        Autostations currentTeacher = teachers.get(position);
+    public void onBindViewHolder(final AutoStatAdapter.RecyclerViewHolder holder, int position) {
+        final Autostations currentTeacher = teachers.get(position);
         holder.nameTextView.setText(currentTeacher.getName());
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder=new AlertDialog.Builder(holder.nameTextView.getContext());
+                builder.setTitle("Delete");
+                builder.setMessage("Sure to proceed?");
+                builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseDatabase.getInstance().getReference().child("Auto_Stations")
+                                .child(currentTeacher.getKey()).removeValue();
+                        FirebaseDatabase.getInstance().getReference().child("Auto_Stationss")
+                                .child(currentTeacher.getKey()).removeValue();
+
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+                builder.show();
+            }
+        });
 
     }
     @Override
@@ -49,11 +74,27 @@ public class AutoStatAdapter extends RecyclerView.Adapter<AutoStatAdapter.Recycl
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         public TextView nameTextView;
+        public ImageButton delete,show;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
             nameTextView =itemView.findViewById ( R.id.titleann);
+            delete=itemView.findViewById(R.id.delete);
+            show=itemView.findViewById(R.id.showlink);
             itemView.setOnClickListener(this);
+            show.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (mListener != null) {
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION) {
+                            mListener.onItemClick(position);
+
+                        }
+                    }
+
+                }
+            });
         }
         @Override
         public void onClick(View v) {
