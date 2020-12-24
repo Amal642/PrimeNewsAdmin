@@ -30,7 +30,7 @@ public class AddTourismActivity extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 1;
     private Button chooseImageBtn;
     private Button uploadBtn;
-    private EditText nameEditText;
+    private EditText nameEditText,call;
     private EditText descriptionEditText;
     private ImageView chosenImageView;
     //private ProgressBar uploadProgressBar;
@@ -48,6 +48,7 @@ public class AddTourismActivity extends AppCompatActivity {
         chooseImageBtn = findViewById(R.id.button_choose_image);
         uploadBtn = findViewById(R.id.uploadBtn);
         nameEditText = findViewById(R.id.nameEditText);
+        call=findViewById(R.id.phone);
         descriptionEditText = findViewById ( R.id.descriptionEditText);
         chosenImageView = findViewById(R.id.chosenImageView);
         //uploadProgressBar = findViewById(R.id.progress_bar);
@@ -95,6 +96,7 @@ public class AddTourismActivity extends AppCompatActivity {
     }
     private void uploadFile() {
         if (mImageUri != null) {
+            Toast.makeText(this, "Pls Wait Uploading", Toast.LENGTH_LONG).show();
             final StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()
                     + "." + getFileExtension(mImageUri));
             //uploadProgressBar.setVisibility(View.VISIBLE);
@@ -118,7 +120,7 @@ public class AddTourismActivity extends AppCompatActivity {
                                     Toast.makeText(AddTourismActivity.this, "Tourism Upload successful", Toast.LENGTH_LONG).show();
                                     Tourism upload = new Tourism(nameEditText.getText().toString().trim(),
                                             uri.toString(),
-                                            descriptionEditText.getText().toString());
+                                            descriptionEditText.getText().toString(),call.getText().toString());
                                     String uploadId = mDatabaseRef.push().getKey();
                                     mDatabaseRef.child(uploadId).setValue(upload);
                                     //uploadProgressBar.setVisibility(View.INVISIBLE);

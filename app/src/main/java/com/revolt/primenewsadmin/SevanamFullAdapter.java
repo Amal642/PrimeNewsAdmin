@@ -3,6 +3,8 @@ package com.revolt.primenewsadmin;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,7 +73,7 @@ public class SevanamFullAdapter  extends RecyclerView.Adapter<SevanamFullAdapter
     }
     public class RecyclerViewHolder extends RecyclerView.ViewHolder{
         public TextView nameTextView,place,phone;
-        public ImageButton delete;
+        public ImageButton delete,call;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
@@ -79,6 +81,16 @@ public class SevanamFullAdapter  extends RecyclerView.Adapter<SevanamFullAdapter
             place=itemView.findViewById(R.id.descann);
             phone=itemView.findViewById(R.id.phoneann);
             delete=itemView.findViewById(R.id.delete);
+            call=itemView.findViewById(R.id.call);
+            call.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    final String pdescription = teachers.get(getAdapterPosition()).getBtime();
+                    Intent i = new Intent(Intent.ACTION_DIAL);
+                    i.setData(Uri.parse("tel:"+pdescription));
+                    mContext.startActivity(i);
+                }
+            });
 
         }
 

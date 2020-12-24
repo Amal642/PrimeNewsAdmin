@@ -96,6 +96,7 @@ public class AddNewsActivity extends AppCompatActivity {
     }
     private void uploadFile() {
         if (mImageUri != null) {
+            Toast.makeText(this, "Pls Wait Uploading", Toast.LENGTH_LONG).show();
             final StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()
                     + "." + getFileExtension(mImageUri));
             //uploadProgressBar.setVisibility(View.VISIBLE);

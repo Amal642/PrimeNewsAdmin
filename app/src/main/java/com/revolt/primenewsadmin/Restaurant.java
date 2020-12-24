@@ -3,7 +3,7 @@ package com.revolt.primenewsadmin;
 import com.google.firebase.database.Exclude;
 
 public class Restaurant {
-    private String name;
+    private String name,phone;
     private String imageURL;
     private String key;
     private String description;
@@ -15,14 +15,24 @@ public class Restaurant {
     public Restaurant (int position){
         this.position = position;
     }
-    public Restaurant(String name, String imageUrl ,String Des) {
+    public Restaurant(String name, String imageUrl ,String Des,String phone) {
         if (name.trim().equals("")) {
             name = "No Name";
         }
         this.name = name;
         this.imageURL = imageUrl;
         this.description = Des;
+        this.phone=phone;
     }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     public String getDescription() {
         return description;
     }

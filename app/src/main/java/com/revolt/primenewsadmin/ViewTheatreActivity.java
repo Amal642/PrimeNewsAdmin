@@ -34,6 +34,7 @@ public class ViewTheatreActivity extends AppCompatActivity implements TheatreAda
         intent.putExtra("NAME_KEY", data[0]);
         intent.putExtra("DESCRIPTION_KEY", data[1]);
         intent.putExtra("IMAGE_KEY", data[2]);
+        intent.putExtra("PHONE_KEY", data[3]);
         startActivity(intent);
     }
 
@@ -76,14 +77,14 @@ public class ViewTheatreActivity extends AppCompatActivity implements TheatreAda
 
     public void onItemClick(int position) {
         Theatre clickedTeacher=mTeacher.get(position);
-        String[] teacherData={clickedTeacher.getName(),clickedTeacher.getDescription(),clickedTeacher.getImageUrl()};
+        String[] teacherData={clickedTeacher.getName(),clickedTeacher.getDescription(),clickedTeacher.getImageUrl(),clickedTeacher.getPhone()};
         openDetailActivity(teacherData);
     }
 
     @Override
     public void onShowItemClick(int position) {
         Theatre clickedTeacher=mTeacher.get(position);
-        String[] teacherData={clickedTeacher.getName(),clickedTeacher.getDescription(),clickedTeacher.getImageUrl()};
+        String[] teacherData={clickedTeacher.getName(),clickedTeacher.getDescription(),clickedTeacher.getImageUrl(),clickedTeacher.getPhone()};
         openDetailActivity(teacherData);
     }
     @Override

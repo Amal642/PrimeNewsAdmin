@@ -34,34 +34,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e171811b-22ef-457b-a2e0-de5bdfeb702c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullNaatuActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/GeneralAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/GeneralFullAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/HospitalAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/HospitalFullAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/NattuAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_naatu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_call_24.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddGeneralFullActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddGeneralFullActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddHospitalFullActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddHospitalFullActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddNattuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddNattuActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FeedbackAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FeedbackAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/GeneralFullDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/GeneralFullDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/HospitalFullDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/HospitalFullDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/MyViewHolder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Nattu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Nattu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddNewsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddNewsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddOfficeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddOfficeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddRestaurantActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddRestaurantActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddTheatreActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddTheatreActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddTourismActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AddTourismActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AutoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/AutoAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/BloodAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/BloodAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FireAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FireAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullNaatuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullNaatuActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullOfficeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullOfficeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullRestaurantActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullRestaurantActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullTheatreActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullTheatreActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullTourismActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/FullTourismActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/GeneralFullAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/GeneralFullAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/HospitalFullAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/HospitalFullAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Office.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Office.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/OfficeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/OfficeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/RestaurantAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/RestaurantAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/SevanamFullAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/SevanamFullAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ShopFullAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ShopFullAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TaxifullAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TaxifullAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Theatre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TheatreAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TheatreAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Tourism.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/Tourism.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TourismAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TourismAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewGeneralActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewGeneralActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewHospitalsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewHospitalsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewNattuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewNattuActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_general_full.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_general_full.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_hospital_full.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_hospital_full.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_nattu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_nattu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewBloodActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewBloodActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewOfficeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewOfficeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewRestaurantActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewRestaurantActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewTheatreActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewTheatreActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewTourismActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewTourismActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/WorkerFullAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/WorkerFullAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_office.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_office.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_restaurant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_restaurant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_theatre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_theatre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_tourism.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_tourism.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_naatu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_naatu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_office.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_office.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_restaurant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_restaurant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_theatre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_theatre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_tourism.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_full_tourism.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_model4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_model4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_modelnaatu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_modelnaatu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +87,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[33006f43ed1445f9]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -484,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608749876565</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="new 3">
+      <created>1608828055977</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1608828055977</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,17 +550,18 @@
     <MESSAGE value="new" />
     <MESSAGE value="new 1" />
     <MESSAGE value="new 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="new 2" />
+    <MESSAGE value="new 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="new 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="200" y="96" key="#PSD" timestamp="1608573745262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="200" y="96" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1608573745262" />
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1608809524275">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1608834045209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1608809524275" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1608834045209" />
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607240632857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -560,10 +586,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608748878542" />
-    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1608749870948">
+    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1608828049257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608749870948" />
+    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608828049257" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608708671322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -572,22 +598,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="538" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1608574648619" />
-    <state width="1322" height="511" key="GridCell.Tab.0.bottom" timestamp="1608827679393">
+    <state width="1322" height="511" key="GridCell.Tab.0.bottom" timestamp="1608832280499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="511" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608827679393" />
-    <state width="1322" height="511" key="GridCell.Tab.0.center" timestamp="1608827679392">
+    <state width="1322" height="511" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608832280499" />
+    <state width="1322" height="511" key="GridCell.Tab.0.center" timestamp="1608832280498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="511" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608827679392" />
-    <state width="1322" height="511" key="GridCell.Tab.0.left" timestamp="1608827679392">
+    <state width="1322" height="511" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608832280498" />
+    <state width="1322" height="511" key="GridCell.Tab.0.left" timestamp="1608832280498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="511" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608827679392" />
-    <state width="1322" height="511" key="GridCell.Tab.0.right" timestamp="1608827679392">
+    <state width="1322" height="511" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608832280498" />
+    <state width="1322" height="511" key="GridCell.Tab.0.right" timestamp="1608832280499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="511" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608827679392" />
+    <state width="1322" height="511" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608832280499" />
     <state x="407" y="66" key="RollbackChangesDialog" timestamp="1608573640095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -596,10 +622,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608574199990" />
-    <state x="275" y="85" key="Vcs.Push.Dialog.v2" timestamp="1608749879466">
+    <state x="275" y="85" key="Vcs.Push.Dialog.v2" timestamp="1608828060518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="85" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608749879466" />
+    <state x="275" y="85" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608828060518" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1607593365833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -624,9 +650,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1607439394070" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606978099641">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1608835645135">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606978099641" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1608835645135" />
   </component>
 </project>
