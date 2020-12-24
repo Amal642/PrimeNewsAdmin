@@ -27,7 +27,7 @@ import com.squareup.picasso.Picasso;
 
 public class AddNattuActivity extends AppCompatActivity {
 
-    EditText name,desc,phone;
+    EditText sadhanam,alav,price,place,name,desc,phone;
     Button upload,image;
     ImageView imageView;
     private static final int PICK_IMAGE_REQUEST = 1;
@@ -42,9 +42,13 @@ public class AddNattuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_nattu);
 
-        name=findViewById(R.id.itemheading);
-        desc=findViewById(R.id.desc);
-        phone=findViewById(R.id.itemphone);
+        sadhanam=findViewById(R.id.title);
+        alav=findViewById(R.id.alav);
+        price=findViewById(R.id.price);
+        place=findViewById(R.id.place);
+        name=findViewById(R.id.name);
+        desc=findViewById(R.id.description);
+        phone=findViewById(R.id.phone);
         upload=findViewById(R.id.uploaditm);
         image=findViewById(R.id.button_choose_item);
         imageView=findViewById(R.id.chosenImageViewnaatu);
@@ -97,6 +101,8 @@ public class AddNattuActivity extends AppCompatActivity {
     }
     private void uploadFile() {
         if (mImageUri != null) {
+            final String uploadId = DataRef.push().getKey();
+            Toast.makeText(AddNattuActivity.this, "Pls Wait Uploading", Toast.LENGTH_LONG).show();
             final StorageReference fileReference = storageRef.child(System.currentTimeMillis()
                     + "." + getFileExtension(mImageUri));
             //uploadProgressBar.setVisibility(View.VISIBLE);
@@ -117,10 +123,17 @@ public class AddNattuActivity extends AppCompatActivity {
                             fileReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
-                                    Toast.makeText(AddNattuActivity.this, "News Upload successful", Toast.LENGTH_LONG).show();
-                                    Nattu upload = new Nattu(name.getText().toString().trim(),
-                                            desc.getText().toString(),uri.toString(),phone.getText().toString());
-                                    String uploadId = DataRef.push().getKey();
+                                    Toast.makeText(AddNattuActivity.this, "Upload successful", Toast.LENGTH_LONG).show();
+
+                                    Nattu upload = new Nattu(name.getText().toString(),
+                                            desc.getText().toString(),
+                                            phone.getText().toString(),
+                                            uri.toString(),
+                                            sadhanam.getText().toString().trim(),
+                                            alav.getText().toString(),
+                                            price.getText().toString(),
+                                            place.getText().toString(),uploadId);
+
                                     DataRef.child(uploadId).setValue(upload);
                                     //uploadProgressBar.setVisibility(View.INVISIBLE);
                                     openImagesActivity();

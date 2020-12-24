@@ -1,6 +1,8 @@
 package com.revolt.primenewsadmin;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -15,6 +17,7 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.text.DateFormat;
@@ -34,13 +37,36 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     }
     @Override
     public RestaurantAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.row_model, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.rowmodelnewof, parent, false);
         return new RestaurantAdapter.RecyclerViewHolder(v);
     }
     @Override
-    public void onBindViewHolder(RestaurantAdapter.RecyclerViewHolder holder, int position) {
-        Restaurant currentTeacher = teachers.get(position);
+    public void onBindViewHolder(final RestaurantAdapter.RecyclerViewHolder holder, int position) {
+        final Restaurant currentTeacher = teachers.get(position);
         holder.nameTextView.setText(currentTeacher.getName());
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder=new AlertDialog.Builder(holder.nameTextView.getContext());
+                builder.setTitle("Delete");
+                builder.setMessage("Sure to proceed?");
+                builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseDatabase.getInstance().getReference().child("Restaurant_uploads")
+                                .child(currentTeacher.getKey()).removeValue();
+
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+                builder.show();
+            }
+        });
         Picasso.get()
                 .load(currentTeacher.getImageUrl())
                 .fit()
@@ -53,9 +79,9 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     }
     public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener,
             View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener {
-        public TextView nameTextView,descriptionTextView,dateTextView;
+        public TextView nameTextView;
         public ImageView teacherImageView;
-        public ImageButton imageButton,viewnews;
+        public ImageButton imageButton,viewnews,delete;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
@@ -63,6 +89,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
             teacherImageView = itemView.findViewById(R.id.teacherImageView);
             imageButton=itemView.findViewById(R.id.newsshare1);
             viewnews=itemView.findViewById(R.id.shownews);
+            delete=itemView.findViewById(R.id.delete);
             imageButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -83,7 +110,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
                     int position = getAdapterPosition();
                     if(position != RecyclerView.NO_POSITION){
                         mListener.onShowItemClick(position);}
-                    Toast.makeText(view.getContext(), "Showing news", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(view.getContext(), "Showing", Toast.LENGTH_SHORT).show();
                 }
             });
             itemView.setOnClickListener(this);

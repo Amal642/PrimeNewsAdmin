@@ -25,7 +25,7 @@ import java.util.ArrayList;
 public class AddHospitalFullActivity extends AppCompatActivity {
 
     Spinner spinner;
-    EditText busname,service,time,busclass,route;
+    EditText busname,service,time;
     Button uploadbtn;
     FirebaseDatabase db;
     DatabaseReference databaseReference,dataa;
@@ -42,8 +42,6 @@ public class AddHospitalFullActivity extends AppCompatActivity {
         busname = findViewById(R.id.taxiname);
         service=findViewById(R.id.taxiservice);
         time=findViewById(R.id.taxitime);
-        busclass = findViewById(R.id.taxiclass);
-        route=findViewById(R.id.taxiroute);
         uploadbtn = findViewById(R.id.uploadtaxifull);
 
         databaseReference=db.getInstance().getReference("Hospital");
@@ -61,8 +59,6 @@ public class AddHospitalFullActivity extends AppCompatActivity {
                         String Busname = busname.getText().toString().trim();
                         String BusService = service.getText().toString().trim();
                         String BusTym = time.getText().toString().trim();
-                        String Busclass = busclass.getText().toString().trim();
-                        String BusRoute = route.getText().toString().trim();
                         String id = databaseReference.push().getKey();
 
                         //FoodDetails info = new FoodDetails(dishes,quantity,price,descrption,String.valueOf(uri),RandomUID,ChefId);
@@ -77,7 +73,7 @@ public class AddHospitalFullActivity extends AppCompatActivity {
                         });*/
 
 
-                        BusStatDetails busStatDetails1 = new BusStatDetails( Busname, BusService, BusTym, Busclass, BusRoute, id);
+                        Taxifull busStatDetails1 = new Taxifull( Busname, BusService, BusTym, id);
                         data= spinner.getSelectedItem().toString();
                         dataa.child(data).child(id).setValue(busStatDetails1).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override

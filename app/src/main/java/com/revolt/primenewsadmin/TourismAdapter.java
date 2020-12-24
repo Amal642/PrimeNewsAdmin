@@ -1,6 +1,8 @@
 package com.revolt.primenewsadmin;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -15,6 +17,7 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import java.text.DateFormat;
@@ -35,14 +38,37 @@ public class TourismAdapter extends RecyclerView.Adapter<TourismAdapter.Recycler
 
     @Override
     public TourismAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.row_model, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.rowmodelnewof, parent, false);
         return new TourismAdapter.RecyclerViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(TourismAdapter.RecyclerViewHolder holder, int position) {
-        Tourism currentTeacher = teachers.get(position);
+    public void onBindViewHolder(final TourismAdapter.RecyclerViewHolder holder, int position) {
+        final Tourism currentTeacher = teachers.get(position);
         holder.nameTextView.setText(currentTeacher.getName());
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder=new AlertDialog.Builder(holder.nameTextView.getContext());
+                builder.setTitle("Delete");
+                builder.setMessage("Sure to proceed?");
+                builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseDatabase.getInstance().getReference().child("Tourism_uploads")
+                                .child(currentTeacher.getKey()).removeValue();
+
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+                builder.show();
+            }
+        });
         //holder.descriptionTextView.setText(currentTeacher.getDescription());
         Picasso.get()
                 .load(currentTeacher.getImageUrl())
@@ -60,7 +86,7 @@ public class TourismAdapter extends RecyclerView.Adapter<TourismAdapter.Recycler
             View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener {
         public TextView nameTextView, descriptionTextView, dateTextView;
         public ImageView teacherImageView;
-        public ImageButton imageButton, viewnews;
+        public ImageButton imageButton, viewnews,delete;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
@@ -70,6 +96,7 @@ public class TourismAdapter extends RecyclerView.Adapter<TourismAdapter.Recycler
             teacherImageView = itemView.findViewById(R.id.teacherImageView);
             imageButton = itemView.findViewById(R.id.newsshare1);
             viewnews = itemView.findViewById(R.id.shownews);
+            delete=itemView.findViewById(R.id.delete);
             imageButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -91,7 +118,7 @@ public class TourismAdapter extends RecyclerView.Adapter<TourismAdapter.Recycler
                     if (position != RecyclerView.NO_POSITION) {
                         mListener.onShowItemClick(position);
                     }
-                    Toast.makeText(view.getContext(), "Showing news", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(view.getContext(), "Showing", Toast.LENGTH_SHORT).show();
                 }
             });
             itemView.setOnClickListener(this);

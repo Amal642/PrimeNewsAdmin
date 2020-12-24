@@ -52,7 +52,7 @@ public class FeedbackAdapter extends FirebaseRecyclerAdapter<Feedback,FeedbackAd
     @NonNull
     @Override
     public FeedbackAdapter.myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_model4,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_model2,parent,false);
         return new FeedbackAdapter.myviewholder(view);
     }
 

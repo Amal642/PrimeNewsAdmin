@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_marginBottom="8dp"
-    android:background="@color/colorPrimary">
+    android:background="#9809">
 
     <ImageView
         android:layout_width="match_parent"
@@ -21,21 +21,18 @@
         android:layout_marginTop="250dp"
         android:gravity="center"/>
     <TextView
-        android:id="@+id/itemDescription1"
+        android:id="@+id/itemprice1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="item name"
         android:layout_below="@+id/itemname1"
         android:layout_marginTop="3dp"
         android:gravity="center"/>
-
-    <TextView
-        android:id="@+id/itemphonee1"
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:gravity="center"
-        android:layout_below="@+id/itemDescription1"
-        android:text="item name" />
+        android:background="@drawable/ic_baseline_delete_24"/>
+
 
 </RelativeLayout>

@@ -19,31 +19,31 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
-import com.revolt.primenewsadmin.Theatre;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
-public class TheatreAdapter extends RecyclerView.Adapter<TheatreAdapter.RecyclerViewHolder> {
-    private Context mContext;
-    private List<Theatre> teachers;
-    private OnItemClickListener mListener;
+public class NattuAdapter extends RecyclerView.Adapter<NattuAdapter.RecyclerViewHolder>{
 
-    public TheatreAdapter(Context context, List<Theatre> uploads) {
+    private Context mContext;
+    private List<Nattu> teachers;
+    private NattuAdapter.OnItemClickListener mListener;
+
+    public NattuAdapter(Context context, List<Nattu> uploads) {
         mContext = context;
         teachers = uploads;
     }
+
+
     @Override
-    public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.rowmodelnewof, parent, false);
-        return new RecyclerViewHolder(v);
+    public NattuAdapter.RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(mContext).inflate(R.layout.row_modelnaatu, parent, false);
+        return new NattuAdapter.RecyclerViewHolder(v);
     }
     @Override
-    public void onBindViewHolder(final RecyclerViewHolder holder, int position) {
-        final Theatre currentTeacher = teachers.get(position);
-        holder.nameTextView.setText(currentTeacher.getName());
+    public void onBindViewHolder(final NattuAdapter.RecyclerViewHolder holder, final int position) {
+        final Nattu currentTeacher = teachers.get(position);
+        holder.nameTextView.setText(currentTeacher.getSadhanam());
+        holder.price.setText(currentTeacher.getPrice());
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,8 +53,8 @@ public class TheatreAdapter extends RecyclerView.Adapter<TheatreAdapter.Recycler
                 builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("Theatre_uploads")
-                                .child(currentTeacher.getKey()).removeValue();
+                        FirebaseDatabase.getInstance().getReference().child("Nattu")
+                                .child(currentTeacher.getId()).removeValue();
 
                     }
                 });
@@ -68,7 +68,7 @@ public class TheatreAdapter extends RecyclerView.Adapter<TheatreAdapter.Recycler
             }
         });
         Picasso.get()
-                .load(currentTeacher.getImageUrl())
+                .load(currentTeacher.getImageurl())
                 .fit()
                 .centerCrop()
                 .into(holder.teacherImageView);
@@ -79,42 +79,16 @@ public class TheatreAdapter extends RecyclerView.Adapter<TheatreAdapter.Recycler
     }
     public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener,
             View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener {
-        public TextView nameTextView,descriptionTextView,dateTextView;
+        public TextView nameTextView,price;
         public ImageView teacherImageView;
-        public ImageButton imageButton,viewnews,delete;
+        public ImageButton delete;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
-            nameTextView =itemView.findViewById ( R.id.nameTextView );
-            //descriptionTextView=itemView.findViewById(R.id.descriptionDetailTextView);
-            //dateTextView = itemView.findViewById(R.id.dateTextView);
-            teacherImageView = itemView.findViewById(R.id.teacherImageView);
-            imageButton=itemView.findViewById(R.id.newsshare1);
-            viewnews=itemView.findViewById(R.id.shownews);
+            nameTextView =itemView.findViewById ( R.id.itemname1);
+            price=itemView.findViewById(R.id.itemprice1);
+            teacherImageView = itemView.findViewById(R.id.picnaatu);
             delete=itemView.findViewById(R.id.delete);
-            imageButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    final String pTitle = teachers.get(getAdapterPosition()).getName();
-                    final String pdescription = teachers.get(getAdapterPosition()).getDescription();
-                    Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                    sharingIntent.setType("text/plain");
-                    String shareBody = pTitle + "\n" + pdescription + "\n" /*+ "To download the app from playstore"+"\n"+"http://play.google.com/store/apps/details?id=" + view.getContext().getPackageName()*/;
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Prime News");
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
-                    mContext.startActivity(Intent.createChooser(sharingIntent, "Share news via"));
-                    Toast.makeText(view.getContext(), "Sharing", Toast.LENGTH_SHORT).show();
-                }
-            });
-            viewnews.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int position = getAdapterPosition();
-                    if(position != RecyclerView.NO_POSITION){
-                        mListener.onShowItemClick(position);}
-                    Toast.makeText(view.getContext(), "Showing", Toast.LENGTH_SHORT).show();
-                }
-            });
             itemView.setOnClickListener(this);
             itemView.setOnCreateContextMenuListener(this);
         }
@@ -158,13 +132,12 @@ public class TheatreAdapter extends RecyclerView.Adapter<TheatreAdapter.Recycler
     }
 
 
-    public interface OnItemClickListener  {
+    public interface OnItemClickListener {
         void onItemClick(int position);
         void onShowItemClick(int position);
         void onDeleteItemClick(int position);
     }
-    public void setOnItemClickListener(OnItemClickListener listener) {
+    public void setOnItemClickListener(NattuAdapter.OnItemClickListener listener) {
         mListener = listener;
     }
-
 }

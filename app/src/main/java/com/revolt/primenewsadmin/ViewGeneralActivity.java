@@ -17,10 +17,10 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewGeneralActivity extends AppCompatActivity implements TaxiAdapter.OnItemClickListener{
+public class ViewGeneralActivity extends AppCompatActivity implements GeneralAdapter.OnItemClickListener{
 
     private RecyclerView mRecyclerView;
-    private TaxiAdapter mAdapter;
+    private GeneralAdapter mAdapter;
     private DatabaseReference mDatabaseRef;
     private ValueEventListener mDBListener;
     private List<Taxi> mTeachers;
@@ -41,7 +41,7 @@ public class ViewGeneralActivity extends AppCompatActivity implements TaxiAdapte
         //mProgressBar = findViewById(R.id.myDataLoaderProgressBar);
         // mProgressBar.setVisibility(View.VISIBLE);
         mTeachers = new ArrayList<>();
-        mAdapter = new TaxiAdapter(ViewGeneralActivity.this, mTeachers);
+        mAdapter = new GeneralAdapter(ViewGeneralActivity.this, mTeachers);
         mRecyclerView.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener( ViewGeneralActivity.this);
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("General");

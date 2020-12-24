@@ -21,7 +21,7 @@ import java.util.List;
 public class HospitalFullDetailsActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
-    private TaxifullAdapter mAdapter;
+    private HospitalFullAdapter mAdapter;
     private FirebaseStorage mStorage;
     private DatabaseReference mDatabaseRef;
     private ValueEventListener mDBListener;
@@ -40,7 +40,7 @@ public class HospitalFullDetailsActivity extends AppCompatActivity {
         mTeachers = new ArrayList<>();
         Intent i=this.getIntent();
         String name=i.getExtras().getString("NAME_KEY");
-        //mAdapter = new TaxifullAdapter(HospitalFullDetailsActivity.this, mTeachers);
+        mAdapter = new HospitalFullAdapter(HospitalFullDetailsActivity.this, mTeachers,name);
         mRecyclerView.setAdapter(mAdapter);
         mStorage = FirebaseStorage.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Hospitals").child(name);
