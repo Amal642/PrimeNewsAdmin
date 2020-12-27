@@ -3,6 +3,7 @@ package com.revolt.primenewsadmin;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -43,6 +44,11 @@ public class AddLinksActivity extends AppCompatActivity {
         String name=linkname.getText().toString();
         String links=link.getText().toString();
         String id = databaseReference.push().getKey();
+
+        if (!links.startsWith("http://") && !links.startsWith("https://")) {
+            //Uri name1 = Uri.parse("http://" + name);
+            links="http://"+links;
+        }
 
         if(!TextUtils.isEmpty(name)){
             Link announcements = new Link(name,links,id);
