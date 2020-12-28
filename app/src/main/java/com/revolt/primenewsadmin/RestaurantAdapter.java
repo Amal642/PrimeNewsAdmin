@@ -45,29 +45,6 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     public void onBindViewHolder(final RestaurantAdapter.RecyclerViewHolder holder, int position) {
         final Restaurant currentTeacher = teachers.get(position);
         holder.nameTextView.setText(currentTeacher.getName());
-        holder.delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder=new AlertDialog.Builder(holder.nameTextView.getContext());
-                builder.setTitle("Delete");
-                builder.setMessage("Sure to proceed?");
-                builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("Restaurant_uploads")
-                                .child(currentTeacher.getKey()).removeValue();
-
-                    }
-                });
-                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
-                });
-                builder.show();
-            }
-        });
         Picasso.get()
                 .load(currentTeacher.getImageUrl())
                 .fit()
@@ -82,7 +59,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
             View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener {
         public TextView nameTextView;
         public ImageView teacherImageView;
-        public ImageButton imageButton,viewnews,delete;
+        public ImageButton imageButton,viewnews;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
@@ -90,7 +67,6 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
             teacherImageView = itemView.findViewById(R.id.teacherImageView);
             imageButton=itemView.findViewById(R.id.newsshare1);
             viewnews=itemView.findViewById(R.id.shownews);
-            delete=itemView.findViewById(R.id.delete);
             imageButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

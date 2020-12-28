@@ -33,8 +33,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e171811b-22ef-457b-a2e0-de5bdfeb702c" name="Default Changelist" comment="pre final commit">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="e171811b-22ef-457b-a2e0-de5bdfeb702c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/NattuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/NattuAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/NewsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/NewsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/OfficeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/OfficeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/RestaurantAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/RestaurantAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TheatreAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TheatreAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TourismAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/TourismAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewNattuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/revolt/primenewsadmin/ViewNattuActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_model.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_model.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_modelnaatu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_modelnaatu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/rowmodelnewof.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/rowmodelnewof.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +97,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PrimeNews" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -491,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609085718195</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="pre final commit">
+      <created>1609086434545</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1609086434545</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,34 +590,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608748878542" />
-    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1609085710843">
+    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1609086432983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1609085710843" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609066626201">
+    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1609086432983" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1609135994819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609066626201" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609135994819" />
     <state x="538" y="262" key="Github.ShareDialog" timestamp="1608574648619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="538" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1608574648619" />
-    <state width="1322" height="511" key="GridCell.Tab.0.bottom" timestamp="1609084683471">
+    <state width="1322" height="511" key="GridCell.Tab.0.bottom" timestamp="1609138207443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="511" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609084683471" />
-    <state width="1322" height="511" key="GridCell.Tab.0.center" timestamp="1609084683471">
+    <state width="1322" height="511" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609138207443" />
+    <state width="1322" height="511" key="GridCell.Tab.0.center" timestamp="1609138207443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="511" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609084683471" />
-    <state width="1322" height="511" key="GridCell.Tab.0.left" timestamp="1609084683469">
+    <state width="1322" height="511" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609138207443" />
+    <state width="1322" height="511" key="GridCell.Tab.0.left" timestamp="1609138207443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="511" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609084683469" />
-    <state width="1322" height="511" key="GridCell.Tab.0.right" timestamp="1609084683471">
+    <state width="1322" height="511" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609138207443" />
+    <state width="1322" height="511" key="GridCell.Tab.0.right" timestamp="1609138207443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="511" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609084683471" />
+    <state width="1322" height="511" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609138207443" />
     <state x="407" y="66" key="RollbackChangesDialog" timestamp="1608573640095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -609,10 +626,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1609058804885" />
-    <state x="275" y="85" key="Vcs.Push.Dialog.v2" timestamp="1609085725812">
+    <state x="275" y="85" key="Vcs.Push.Dialog.v2" timestamp="1609086437568">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="85" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609085725812" />
+    <state x="275" y="85" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1609086437568" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1607593365833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

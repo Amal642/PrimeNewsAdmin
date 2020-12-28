@@ -44,29 +44,6 @@ public class NattuAdapter extends RecyclerView.Adapter<NattuAdapter.RecyclerView
         final Nattu currentTeacher = teachers.get(position);
         holder.nameTextView.setText(currentTeacher.getSadhanam());
         holder.price.setText(currentTeacher.getPrice());
-        holder.delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder builder=new AlertDialog.Builder(holder.nameTextView.getContext());
-                builder.setTitle("Delete");
-                builder.setMessage("Sure to proceed?");
-                builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("Nattu")
-                                .child(currentTeacher.getId()).removeValue();
-
-                    }
-                });
-                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
-                });
-                builder.show();
-            }
-        });
         Picasso.get()
                 .load(currentTeacher.getImageurl())
                 .fit()
@@ -81,14 +58,12 @@ public class NattuAdapter extends RecyclerView.Adapter<NattuAdapter.RecyclerView
             View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener {
         public TextView nameTextView,price;
         public ImageView teacherImageView;
-        public ImageButton delete;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
             nameTextView =itemView.findViewById ( R.id.itemname1);
             price=itemView.findViewById(R.id.itemprice1);
             teacherImageView = itemView.findViewById(R.id.picnaatu);
-            delete=itemView.findViewById(R.id.delete);
             itemView.setOnClickListener(this);
             itemView.setOnCreateContextMenuListener(this);
         }

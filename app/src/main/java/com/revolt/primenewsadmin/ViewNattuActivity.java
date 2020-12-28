@@ -109,9 +109,24 @@ public class ViewNattuActivity extends AppCompatActivity implements NattuAdapter
 
     @Override
     public void onShowItemClick(int position) {
+        Nattu clickedTeacher=mTeachers.get(position);
+        String[] teacherData={clickedTeacher.getSadhanam(),clickedTeacher.getPrice(),clickedTeacher.getAlav(),
+                clickedTeacher.getPlace(),clickedTeacher.getName(),clickedTeacher.getPhone(),
+                clickedTeacher.getDesc(),clickedTeacher.getImageurl()};
+        openDetailActivity(teacherData);
     }
     @Override
     public void onDeleteItemClick(int position) {
+        Nattu selectedItem = mTeachers.get(position);
+        final String selectedKey = selectedItem.getId();
+        StorageReference imageRef = mStorage.getReferenceFromUrl(selectedItem.getImageurl());
+        imageRef.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                mDatabaseRef.child(selectedKey).removeValue();
+                Toast.makeText(ViewNattuActivity.this, "Item deleted", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     protected void onDestroy() {
         super.onDestroy();
