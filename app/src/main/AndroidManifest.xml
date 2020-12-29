@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FullNaatuActivity"></activity>
+        <activity android:name=".DeleteAdActivity"></activity>
+        <activity android:name=".FullNaatuActivity" />
         <activity android:name=".ViewGeneralActivity" />
         <activity android:name=".GeneralFullDetailsActivity" />
         <activity android:name=".AddGeneralFullActivity" />

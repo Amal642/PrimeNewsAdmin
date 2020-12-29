@@ -3,11 +3,13 @@ package com.revolt.primenewsadmin;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,12 +36,23 @@ import java.util.List;
 public class ViewAdvActivity extends AppCompatActivity {
 
 ImageSlider mainslider;
+Button advbutton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_adv);
+
+        advbutton=findViewById(R.id.advbutton);
+
+        advbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ViewAdvActivity.this,DeleteAdActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         mainslider = (ImageSlider) findViewById(R.id.image_slider);
