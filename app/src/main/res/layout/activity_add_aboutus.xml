@@ -10,6 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add About Us"
+        android:textSize="25dp"
+        android:textColor="#b13b8d"
+        android:fontFamily="@font/ubuntu_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -22,6 +25,8 @@
         android:layout_width="match_parent"
         android:layout_margin="10dp"
         android:layout_height="300dp"
+        android:hint="Type here......"
+        android:textColorHint="#0081d3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,13 +35,17 @@
         android:id="@+id/upload1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="upload"
+        android:text="   upload   "
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/curv"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.899" />
+        app:layout_constraintVertical_bias="0.862" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

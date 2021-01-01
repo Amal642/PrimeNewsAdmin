@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddNattuActivity">
+    tools:context=".AddNattuActivity"
+    android:background="#b13b8d">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,74 +22,140 @@
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/ubuntu_medium"
+
                 android:hint="Enter Sadhanam name" />
 
             <EditText
                 android:id="@+id/alav"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Enter alav" />
+                android:hint="Enter alav"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/ubuntu_medium"
+                />
 
             <EditText
                 android:id="@+id/price"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Enter price" />
+                android:hint="Enter price"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/ubuntu_medium"
+                />
 
             <EditText
                 android:id="@+id/place"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Enter place" />
+                android:hint="Enter place"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/ubuntu_medium"
+                />
 
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Enter ame" />
+                android:hint="Enter ame"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/ubuntu_medium"
+                />
 
             <EditText
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Enter phone" />
+                android:hint="Enter phone"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/ubuntu_medium"
+                />
 
             <EditText
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Enter Sadhanam description" />
+                android:hint="Enter Sadhanam description"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/ubuntu_medium"
+                />
 
 
             <Button
-        android:id="@+id/button_choose_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="add image"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.859"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697" />
+                android:id="@+id/button_choose_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="add image"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/white"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.859"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.697" />
 
+            <ImageView
+                android:id="@+id/chosenImageViewnaatu"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.127"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.853" />
 
-    <ImageView
-        android:id="@+id/chosenImageViewnaatu"
-        android:layout_width="200dp"
-        android:layout_height="180dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853" />
-
-    <Button
+            <Button
         android:id="@+id/uploaditm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="UPLOAD"
+                android:background="@drawable/white"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.842"

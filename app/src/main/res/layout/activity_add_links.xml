@@ -9,13 +9,26 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Blood details"/>
+        android:text="Blood details"
+        android:textSize="20dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="#b13b8d"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="312dp" />
 
     <EditText
         android:id="@+id/linktext"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="name"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="#0081d3"
+        android:textColorHint="#0081d3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -28,6 +41,11 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="place"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="#0081d3"
+        android:textColorHint="#0081d3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -38,14 +56,18 @@
 
     <Button
         android:id="@+id/uploadlink"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="upload"
+        android:background="@drawable/round"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911" />
+        app:layout_constraintVertical_bias="0.792" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

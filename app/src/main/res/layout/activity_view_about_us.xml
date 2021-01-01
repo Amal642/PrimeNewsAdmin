@@ -19,6 +19,13 @@
             <TextView
                 android:id="@+id/aboutustext"
                 android:text="hi"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="29dp"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 

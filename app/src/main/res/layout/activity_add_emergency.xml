@@ -16,85 +16,162 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add Ambulance " />
+                android:text="Add Ambulance "
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#b13b8d"/>
             <EditText
                 android:id="@+id/ambname"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
                 android:hint="ambulance name"
                 />
             <EditText
                 android:id="@+id/ambplace"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
                 android:hint="ambulance place"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
                 />
             <EditText
                 android:id="@+id/ambphn"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
                 android:hint="ambulance phone"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
                 />
             <Button
                 android:id="@+id/upload"
-                android:layout_width="wrap_content"
+                android:layout_width="110dp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/ubuntu_bold"
                 android:layout_height="wrap_content"
-                android:text="upload"/>
+                android:text="upload"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round"
+                android:layout_marginLeft="20dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add Fire " />
+                android:text="Add Fire "
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="20dp"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                />
             <EditText
                 android:id="@+id/firename"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:hint="Fire name"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
+
                 />
             <EditText
                 android:id="@+id/fireplace"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="ambulance place"
+                android:hint="place"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
                 />
             <EditText
                 android:id="@+id/firephn"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="ambulance phone"
+                android:hint="phone"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
                 />
             <Button
                 android:id="@+id/fireupload"
-                android:layout_width="wrap_content"
+                android:background="@drawable/round"
                 android:layout_height="wrap_content"
-                android:text="upload"/>
+                android:text="upload"
+                android:layout_width="110dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/ubuntu_bold"
+
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add police " />
+                android:text="Add police "
+                android:textColor="#b13b8d"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
             <EditText
                 android:id="@+id/polname"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="ambulance name"
+                android:hint="Station name"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
+
                 />
             <EditText
                 android:id="@+id/polplace"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="ambulance place"
+                android:hint="place"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
                 />
             <EditText
                 android:id="@+id/polphn"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="ambulance phone"
+                android:hint="phone"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColorHint="#0081d3"
+                android:textColor="#b13b8d"
+                android:layout_marginLeft="10dp"
                 />
             <Button
                 android:id="@+id/polupload"
-                android:layout_width="wrap_content"
+                android:background="@drawable/round"
                 android:layout_height="wrap_content"
-                android:text="upload"/>
+                android:text="upload"
+                android:layout_marginLeft="20dp"
+                android:layout_width="110dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/ubuntu_bold"
+                />
 
 
         </LinearLayout>

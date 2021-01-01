@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Prime News Admin</string>
+    <string name="app_name">Prime News Admin
+    </string>
     <string name="path_title">title</string>
     <string name="title_activity_view_emergency">ViewEmergencyActivity</string>
     <string name="tab_text_1">Tab 1</string>

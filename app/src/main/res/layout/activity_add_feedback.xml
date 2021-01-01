@@ -10,8 +10,9 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pls Enter the Feedback"
-        android:textColor="#000000"
+        android:text="Please Enter the Feedback"
+        android:textColor="#b13b8d"
+        android:fontFamily="@font/ubuntu_bold"
         android:textSize="19dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,15 +24,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
         android:text="Name"
         android:textColor="#000000"
         android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.215" />
 
     <EditText
         android:id="@+id/feedname"
@@ -39,6 +41,9 @@
         android:layout_height="40dp"
         android:hint="announcement title"
         android:singleLine="true"
+        android:textColor="#0081d3"
+        android:textColorHint="#0081d3"
+        android:fontFamily="@font/ubuntu_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.795"
@@ -53,6 +58,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.789"
+        android:textColor="#0081d3"
+        android:textColorHint="#0081d3"
+        android:hint="Type here...."
+        android:fontFamily="@font/ubuntu_regular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.452" />
@@ -63,6 +72,7 @@
         android:text="Feedback"
         android:textColor="#000000"
         android:textSize="20dp"
+        android:fontFamily="@font/ubuntu_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
@@ -72,13 +82,15 @@
 
     <Button
         android:id="@+id/uploadfeed"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:text="Upload"
-        android:textColor="#000000"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/round"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.729" />
