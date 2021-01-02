@@ -18,17 +18,23 @@
                 android:id="@+id/nameDetailTextView"
                 android:layout_width="wrap_content"
                 android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/ubuntu_bold"
+               android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#b13b8d"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:padding="5dp"
                 android:textStyle="bold"
-                android:textColor="#000000"
+
                 android:text="News Heading" />
             <ImageView
                 android:id="@+id/teacherDetailImageView"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:padding="5dp"
+                android:layout_marginTop="20dp"
                 android:layout_alignParentTop="true"
                 android:scaleType="centerCrop" />
 
@@ -38,14 +44,20 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:padding="5dp"
-                android:textColor="#0f0f0f"
                 android:minLines="4"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="#0081d3"
+                android:layout_marginTop="20dp"
                 android:text="NEWS FULL HERE..........." />
+
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/call"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_call_24"/>
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_baseline_call_24" />
         </LinearLayout>
     </ScrollView>
 

@@ -9,8 +9,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Bus Station"
-        android:textColor="#000000"
+        android:text="Select Taxi Station"
+        android:textColor="#b13b8d"
+
+        android:fontFamily="@font/ubuntu_bold"
+        android:layout_marginTop="20dp"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +26,7 @@
         android:id="@+id/taxispinner"
         android:layout_width="250dp"
         android:layout_height="30dp"
+        android:layout_marginTop="10dp"
         android:autofillHints="select"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,9 +38,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter the Details"
-        android:textColor="#000000"
+        android:text="Enter Details"
         android:textSize="20dp"
+        android:textColor="#b13b8d"
+
+        android:fontFamily="@font/ubuntu_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -47,9 +53,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bus name"
+        android:text="Taxi name"
+        android:fontFamily="@font/ubuntu_medium"
         android:textColor="#000000"
-        android:textSize="15dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
@@ -62,6 +69,9 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:hint="name"
+        android:textColor="#0081d3"
+        android:textColorHint="#0081d3"
+        android:fontFamily="@font/ubuntu_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
@@ -73,21 +83,25 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
         android:text="Service"
         android:textColor="#000000"
-        android:textSize="15dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.379" />
+        app:layout_constraintVertical_bias="0.387" />
 
     <EditText
         android:id="@+id/taxiservice"
         android:layout_width="250dp"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:hint="Service"
+        android:textColor="#0081d3"
+        android:textColorHint="#0081d3"
+        android:fontFamily="@font/ubuntu_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
@@ -98,21 +112,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
         android:text="Time"
         android:textColor="#000000"
-        android:textSize="15dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483" />
+        app:layout_constraintVertical_bias="0.472" />
 
     <EditText
         android:id="@+id/taxitime"
         android:layout_width="250dp"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:hint="Time"
+        android:textColor="#0081d3"
+        android:textColorHint="#0081d3"
+        android:fontFamily="@font/ubuntu_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
@@ -121,19 +139,20 @@
         app:layout_constraintVertical_bias="0.472" />
 
 
-
-
-
     <Button
         android:id="@+id/uploadtaxifull"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="upload"
+        android:background="@drawable/round"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="  upload  "
+        android:textColor="#ffffff"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.863" />
+        app:layout_constraintVertical_bias="0.691" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

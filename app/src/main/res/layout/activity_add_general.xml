@@ -23,7 +23,7 @@
         android:id="@+id/taxiadd"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:hint="Auto Station"
+        android:hint="Type here...."
         android:textColor="#b13b8d"
         android:fontFamily="@font/ubuntu_regular"
         android:textColorHint="#0081d3"

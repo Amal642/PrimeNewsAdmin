@@ -18,26 +18,34 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="News Heading"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
             android:id="@+id/titleann"
             android:padding="5dp"
             android:textColor="@color/colorAccent" />
 
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
             android:id="@+id/delete"
-            android:background="@drawable/ic_baseline_delete_24"/>
+            android:background="@drawable/ic_delete1"/>
 
 
     </LinearLayout>
+
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/showlink"
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        android:background="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:layout_marginTop="10dp"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="30dp"
         android:layout_weight="1"
-        android:singleLine="true"
-        android:layout_marginLeft="300dp"/>
+        android:background="@drawable/ic_arrow"
+        android:singleLine="true" />
 </androidx.cardview.widget.CardView>

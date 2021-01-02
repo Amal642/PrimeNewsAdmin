@@ -4,60 +4,86 @@
     android:layout_margin="5dp"
     card_view:cardCornerRadius="5dp"
     card_view:cardElevation="10dp"
+    android:layout_marginTop="20dp"
     android:layout_height="wrap_content"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="210dp"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <TextView
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Bus Name"
             android:id="@+id/busname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu_bold"
             android:padding="5dp"
+            android:text="Bus Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/colorAccent" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="bus service"
             android:id="@+id/busservice"
-            android:padding="5dp"
-            android:textStyle="italic"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:padding="5dp"
             android:text="bus service"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic" />
+
+        <TextView
             android:id="@+id/bustime"
-            android:padding="5dp"
-            android:textStyle="italic"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:padding="5dp"
             android:text="bus service"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic" />
+
+        <TextView
             android:id="@+id/busclass"
-            android:padding="5dp"
-            android:textStyle="italic"/>
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:padding="5dp"
             android:text="bus service"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic" />
+
+        <TextView
             android:id="@+id/busroute"
-            android:padding="5dp"
-            android:textStyle="italic"/>
-        <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:padding="5dp"
+            android:text="bus service"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="italic" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/delete"
-            android:background="@drawable/ic_baseline_delete_24"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_delete1" />
 
 
     </LinearLayout>

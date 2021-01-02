@@ -12,7 +12,7 @@
         android:fontFamily="@font/ubuntu_bold"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:text="Select Bus Station"
+        android:text="Select"
         android:textColor="#b13b8d"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +52,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bus name"
+        android:text="Heading"
         android:textColor="#000000"
         android:fontFamily="@font/ubuntu_medium"
         android:textSize="20dp"
@@ -67,7 +67,7 @@
         android:id="@+id/taxiname"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:hint="name"
+        android:hint="Type here...."
         android:textColorHint="#0081d3"
         android:textColor="#b13b8d"
         android:fontFamily="@font/ubuntu_regular"
@@ -83,22 +83,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="Service"
+        android:text="Details"
         android:textColor="#000000"
         android:textSize="20dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.386" />
 
     <EditText
         android:id="@+id/taxiservice"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="Service"
+        android:hint="Type here...."
         android:textColorHint="#0081d3"
         android:textColor="#b13b8d"
         android:fontFamily="@font/ubuntu_regular"
@@ -113,21 +113,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="Time"
+        android:text="Phone no"
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473" />
+        app:layout_constraintVertical_bias="0.475" />
 
     <EditText
         android:id="@+id/taxitime"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="Time"
+        android:hint="Type here...."
         android:textColorHint="#0081d3"
         android:textColor="#b13b8d"
 
