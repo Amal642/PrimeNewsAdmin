@@ -1,7 +1,7 @@
 # PrimeNewsAdmin
 Prime News Admin App
 
-The Admin APP to the project Prime News
+The Admin APP to the project Prime News which is the user app
 
 It has The Full Control of the prime news app
 
